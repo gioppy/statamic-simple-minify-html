@@ -25,7 +25,7 @@ class Minify {
 
     if ($this->isResponse($response) && $this->isHtml($response) && env('MINIFY', false)) {
       $content = $response->getContent();
-      $content = preg_replace(['/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s'], ['>', '<', '\\1'], $content);
+      $content = preg_replace(['/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'], ['>', '<', '\\1'], $content);
 
       $response->setContent($content);
     }
