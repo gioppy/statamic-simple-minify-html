@@ -1,0 +1,29 @@
+{
+    "name": "gioppy/statamic-simple-minify-html",
+    "description": "An addon for Statamic 3 to minify and compress HTML.",
+    "authors": [
+        {
+            "name": "Giovanni Buffa",
+            "email": "tech@giovannibuffa.it"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gioppy\\StatamicSimpleMinifyHtml\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Simple Minify HTML",
+            "description": "An addon for Statamic 3 to minify and compress HTML."
+        },
+        "laravel": {
+            "providers": [
+                "Gioppy\\StatamicSimpleMinifyHtml\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "statamic/cms": "3.0.*"
+    }
+}
