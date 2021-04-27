@@ -24,6 +24,7 @@
         }
     },
     "require": {
-        "statamic/cms": "3.0.*"
+        "statamic/cms": "^3.0",
+        "pfaciana/tiny-html-minifier": "^3.0"
     }
 }
